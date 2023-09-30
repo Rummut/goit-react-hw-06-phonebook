@@ -19,7 +19,6 @@ export const ContactForm = () => {
 
   const handleContactsAdd = newContact => {
     const { name } = newContact;
-    console.log(contacts);
     const isNameContain = contacts.find(
       contact => contact.name.toLowerCase() === name.toLowerCase()
     );
