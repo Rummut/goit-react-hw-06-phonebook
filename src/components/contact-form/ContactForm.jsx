@@ -31,9 +31,8 @@ export const ContactForm = () => {
   };
   const handleOnSubmitForm = event => {
     event.preventDefault();
-
-    dispatch(addContact({ id: nanoid(), name, number }));
     handleContactsAdd({ id: nanoid(), name, number });
+    dispatch(addContact({ id: nanoid(), name, number }));
     reset();
   };
 
